@@ -1,0 +1,193 @@
+/usr/lib/jvm/java-1.11.0-openjdk-amd64
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources UP-TO-DATE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:inspectClassesForKotlinIC UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:compileTestKotlin NO-SOURCE
+> Task :buildSrc:pluginUnderTestMetadata UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:validatePlugins UP-TO-DATE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+> Task :lib:compileJava UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :lib:processResources UP-TO-DATE
+> Task :lib:classes UP-TO-DATE
+> Task :lib:jar UP-TO-DATE
+
+> Task :run
+WARN ManagerImpl - Messages have been last received 56 days ago. The Signal protocol expects that incoming messages are regularly received.
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> GET https://chat.signal.org/v2/keys/
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Authorization: Basic NGU4ZjBjN2YtMDA1Zi00OTc3LTg5M2ItYWVkNGYwNDhjNmRlOno2TDlIRTJ4OEprVXZoUUM1a25vWVNrbg==
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: X-Signal-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: User-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> END GET
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- 200 https://chat.signal.org/v2/keys/ (416ms)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: date: Wed, 06 Oct 2021 17:03:44 GMT
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: content-type: application/json
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: content-length: 12
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: x-signal-timestamp: 1633539824482
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: vary: Accept-Encoding
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: 
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: {"count":88}
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (12-byte body)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> PUT https://chat.signal.org/v1/accounts/attributes/
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Content-Type: application/json; charset=utf-8
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Content-Length: 404
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Authorization: Basic NGU4ZjBjN2YtMDA1Zi00OTc3LTg5M2ItYWVkNGYwNDhjNmRlOno2TDlIRTJ4OEprVXZoUUM1a25vWVNrbg==
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: X-Signal-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: User-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: 
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: {"name":null,"signalingKey":null,"registrationId":476,"voice":true,"video":true,"fetchesMessages":true,"pin":null,"registrationLock":null,"unidentifiedAccessKey":"R0AB2rZ3YmK7V2Spjj4Qiw==","unrestrictedUnidentifiedAccess":false,"discoverableByPhoneNumber":true,"capabilities":{"uuid":false,"storage":false,"senderKey":true,"announcementGroup":true,"changeNumber":false,"gv2-3":true,"gv1-migration":true}}
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> END PUT (404-byte body)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- 204 https://chat.signal.org/v1/accounts/attributes/ (37ms)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: date: Wed, 06 Oct 2021 17:03:44 GMT
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: x-signal-timestamp: 1633539824572
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> GET https://chat.signal.org/v2/attachments/form/upload
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Authorization: Basic NGU4ZjBjN2YtMDA1Zi00OTc3LTg5M2ItYWVkNGYwNDhjNmRlOno2TDlIRTJ4OEprVXZoUUM1a25vWVNrbg==
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: X-Signal-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: User-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> END GET
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- 200 https://chat.signal.org/v2/attachments/form/upload (239ms)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: date: Wed, 06 Oct 2021 17:03:44 GMT
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: content-type: application/json
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: x-signal-timestamp: 1633539824970
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: vary: Accept-Encoding
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: 
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: {"key":"7717469097989326034","credential":"AKIA3GTTN33EFORJYUKU/20211006/us-east-1/s3/aws4_request","acl":"private","algorithm":"AWS4-HMAC-SHA256","date":"20211006T170344Z","policy":"eyAiZXhwaXJhdGlvbiI6ICIyMDIxLTEwLTA2VDE3OjMzOjQ0Ljk3MDI4NFoiLAogICJjb25kaXRpb25zIjogWwogICAgeyJidWNrZXQiOiAid2hpc3BlcnN5c3RlbXMtdGV4dHNlY3VyZS1hdHRhY2htZW50cyJ9LAogICAgeyJrZXkiOiAiNzcxNzQ2OTA5Nzk4OTMyNjAzNCJ9LAogICAgeyJhY2wiOiAicHJpdmF0ZSJ9LAogICAgWyJzdGFydHMtd2l0aCIsICIkQ29udGVudC1UeXBlIiwgIiJdLAogICAgWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDEsIDEwNDg1NzYwMF0sCgogICAgeyJ4LWFtei1jcmVkZW50aWFsIjogIkFLSUEzR1RUTjMzRUZPUkpZVUtVLzIwMjExMDA2L3VzLWVhc3QtMS9zMy9hd3M0X3JlcXVlc3QifSwKICAgIHsieC1hbXotYWxnb3JpdGhtIjogIkFXUzQtSE1BQy1TSEEyNTYifSwKICAgIHsieC1hbXotZGF0ZSI6ICIyMDIxMTAwNlQxNzAzNDRaIiB9CiAgXQp9","signature":"599cbe2669f6f9f26615b47b9edd86f78e55d03bb1faffdc0e249b83d35f167b","attachmentId":7717469097989326034,"attachmentIdString":"7717469097989326034"}
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: <-- END HTTP (934-byte body)
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: --> POST https://cdn.signal.org/attachments/
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Content-Type: multipart/form-data; boundary=bf0a8a0e-8a15-4828-93b6-78a557235aad
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: Content-Length: 2514
+Oct 06, 2021 1:03:44 PM okhttp3.internal.platform.Platform log
+INFO: User-Agent: Signal-Android/5.22.3 signal-cli
+Oct 06, 2021 1:03:45 PM okhttp3.internal.platform.Platform log
+INFO: 
+Oct 06, 2021 1:03:45 PM okhttp3.internal.platform.Platform log
+INFO: --bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="acl"
+Content-Length: 7
+
+private
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="key"
+Content-Length: 19
+
+7717469097989326034
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="policy"
+Content-Length: 592
+
+eyAiZXhwaXJhdGlvbiI6ICIyMDIxLTEwLTA2VDE3OjMzOjQ0Ljk3MDI4NFoiLAogICJjb25kaXRpb25zIjogWwogICAgeyJidWNrZXQiOiAid2hpc3BlcnN5c3RlbXMtdGV4dHNlY3VyZS1hdHRhY2htZW50cyJ9LAogICAgeyJrZXkiOiAiNzcxNzQ2OTA5Nzk4OTMyNjAzNCJ9LAogICAgeyJhY2wiOiAicHJpdmF0ZSJ9LAogICAgWyJzdGFydHMtd2l0aCIsICIkQ29udGVudC1UeXBlIiwgIiJdLAogICAgWyJjb250ZW50LWxlbmd0aC1yYW5nZSIsIDEsIDEwNDg1NzYwMF0sCgogICAgeyJ4LWFtei1jcmVkZW50aWFsIjogIkFLSUEzR1RUTjMzRUZPUkpZVUtVLzIwMjExMDA2L3VzLWVhc3QtMS9zMy9hd3M0X3JlcXVlc3QifSwKICAgIHsieC1hbXotYWxnb3JpdGhtIjogIkFXUzQtSE1BQy1TSEEyNTYifSwKICAgIHsieC1hbXotZGF0ZSI6ICIyMDIxMTAwNlQxNzAzNDRaIiB9CiAgXQp9
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="Content-Type"
+Content-Length: 24
+
+application/octet-stream
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="x-amz-algorithm"
+Content-Length: 16
+
+AWS4-HMAC-SHA256
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="x-amz-credential"
+Content-Length: 55
+
+AKIA3GTTN33EFORJYUKU/20211006/us-east-1/s3/aws4_request
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="x-amz-date"
+Content-Length: 16
+
+20211006T170344Z
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="x-amz-signature"
+Content-Length: 64
+
+599cbe2669f6f9f26615b47b9edd86f78e55d03bb1faffdc0e249b83d35f167b
+--bf0a8a0e-8a15-4828-93b6-78a557235aad
+Content-Disposition: form-data; name="file"; filename="file"
+Content-Type: application/octet-stream
+Content-Length: 592
+
+��L]h�e����F��p��8����/�s#�G Y/�X`�~�d�J�;գ̰~Pj2M�l�u9�:��?�FH\!t��h����<��l#���ε���L�<Ee�0�{�nD0��xw��t*��l�ʾ�\���L�f9�`ĳ��2����k4z;�>~`-��;Yն�O�I1t~�X�V�	!�
+=�*�k݇�/ �R|�0��=�J=��E#X���n��d2�'=$ƿU��(���f�
+�h"���.���=���+��A���%/�î�
+��Q�H��5��l�e�*]>��s�3.L-�;ҐN$:��%6��^t�'. �G	R�҈��	�{��؅�n.�2��硄/�n$�� ���\�xګ�|�~�"��UK����sZ������Y�@#���<m�����!�:��� ��	&8�x1���$Ğ�8*��B'c�)������ǲ����f~�����h�g �&n����Ӗ	π������[5���-��;ȗ$��og�N����9�'������h��ǉ�݌)+Eݷl0���T�Z��u�6��3l�y��ܘ�Ƹ�)���.��
+--bf0a8a0e-8a15-4828-93b6-78a557235aad--
+
+Oct 06, 2021 1:03:45 PM okhttp3.internal.platform.Platform log
+INFO: --> END POST (2514-byte body)
+Oct 06, 2021 1:03:45 PM okhttp3.internal.platform.Platform log
+INFO: <-- HTTP FAILED: java.net.ProtocolException: unexpected end of stream
+Failed to send message: java.net.ProtocolException: unexpected end of stream (PushNetworkException)
+
+> Task :run FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':run'.
+> Process 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'' finished with non-zero exit value 2
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4s
+5 actionable tasks: 1 executed, 4 up-to-date

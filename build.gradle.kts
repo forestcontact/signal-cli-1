@@ -36,6 +36,7 @@ dependencies {
     implementation("net.sourceforge.argparse4j:argparse4j:0.9.0")
     implementation("com.github.hypfvieh:dbus-java:3.3.0")
     implementation("org.slf4j:slf4j-simple:1.7.30")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
     implementation(project(":lib"))
 }
 

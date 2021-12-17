@@ -4,7 +4,7 @@ import org.whispersystems.signalservice.api.push.TrustStore;
 
 import java.io.InputStream;
 
-class IasTrustStore implements TrustStore {
+public class IasTrustStore implements TrustStore {
 
     @Override
     public InputStream getKeyStoreInputStream() {

@@ -27,10 +27,27 @@ import org.asamk.signal.commands.exceptions.UnexpectedErrorException;
 import org.asamk.signal.commands.exceptions.UntrustedKeyErrorException;
 import org.asamk.signal.commands.exceptions.UserErrorException;
 import org.asamk.signal.manager.LibSignalLogger;
+import org.asamk.signal.manager.config.IasTrustStore;
 import org.asamk.signal.util.SecurityProvider;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
+import org.bouncycastle.util.io.pem.PemObject;
+import org.bouncycastle.util.io.pem.PemWriter;
+import org.whispersystems.signalservice.api.push.TrustStore;
 
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 import java.security.Security;
+import java.security.UnrecoverableEntryException;
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+import java.util.Base64;
+import java.util.Enumeration;
 
 public class Main {
 
@@ -46,7 +63,44 @@ public class Main {
         var parser = App.buildArgumentParser();
 
         var ns = parser.parseArgsOrFail(args);
+/*
+        //Ugly hax for Auxin development DO NOT COMMIT
+        try {
+            TrustStore contactTrustStore = new IasTrustStore();
 
+            var keyStore = KeyStore.getInstance("BKS");
+            keyStore.load(contactTrustStore.getKeyStoreInputStream(),
+                    contactTrustStore.getKeyStorePassword().toCharArray());
+            Enumeration<String> aliases = keyStore.aliases();
+            String password = new String("whisper");
+            KeyStore.PasswordProtection protection = new KeyStore.PasswordProtection(password.toCharArray());
+            while(aliases.hasMoreElements() ) {
+                String next = aliases.nextElement();
+                if( keyStore.isKeyEntry(next) ) {
+                    System.out.println("Key:");
+                    KeyStore.Entry entry = keyStore.getEntry(next, protection);
+                    for(KeyStore.Entry.Attribute attribute: entry.getAttributes() ) {
+                        System.out.println(attribute.getName());
+                        System.out.println(attribute.getValue());
+                    }
+                }
+                else if ( keyStore.isCertificateEntry(next) ){
+                    System.out.println("Cert:");
+                    X509Certificate cert = (X509Certificate) keyStore.getCertificate(next);
+                    System.out.println(cert.getPublicKey());
+                    //System.out.println(cert.getEncoded());
+
+                    FileWriter fout = new FileWriter("/home/gyro/out.pem");
+                    PemWriter pwrite = new PemWriter(fout);
+                    pwrite.writeObject(new PemObject("CERTIFICATE", cert.getEncoded()));
+                    pwrite.flush();;
+                    fout.flush();
+                }
+            }
+        } catch (KeyStoreException | CertificateException | IOException | NoSuchAlgorithmException | UnrecoverableEntryException e) {
+            throw new AssertionError(e);
+        }
+*/
         int status = 0;
         try {
             new App(ns).init();

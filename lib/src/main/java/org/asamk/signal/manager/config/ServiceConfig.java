@@ -14,6 +14,8 @@ import java.security.cert.CertificateException;
 import java.util.List;
 
 import okhttp3.Interceptor;
+//import okhttp3.logging;
+import okhttp3.logging.HttpLoggingInterceptor;
 
 public class ServiceConfig {
 
@@ -86,7 +88,10 @@ public class ServiceConfig {
                 .header("User-Agent", userAgent)
                 .build());
 
-        final var interceptors = List.of(userAgentInterceptor);
+        HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
+        logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+
+        final var interceptors = List.of(userAgentInterceptor, logging);
 
         switch (serviceEnvironment) {
             case LIVE:

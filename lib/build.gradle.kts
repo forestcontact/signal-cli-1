@@ -18,6 +18,7 @@ dependencies {
     implementation("com.google.protobuf:protobuf-javalite:3.10.0")
     implementation("org.bouncycastle:bcprov-jdk15on:1.69")
     implementation("org.slf4j:slf4j-api:1.7.30")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.1")
 }
 
 configurations {
